@@ -112,7 +112,7 @@ public class MainCalculoArea {
                         getPreco(questionsData, larguraBase, 100), //preço
                         questionsData.getNome(), //variante
                         "1", //peso
-                        String.valueOf(larguraBase), //largura - 10 que será o tamanho maximo do pacote
+                        String.valueOf(altura), //largura - 10 que será o tamanho maximo do pacote
                         String.valueOf(larguraBase), //comprimento - será a largura do produto
                         String.valueOf(altura), //altura - 10 que será o tamanho maximo do pacote
                         "personalizacao-cordinha, personalizacao_lado_corda, personalizacao-largura, personalizacao-altura, personalizacao", //tags

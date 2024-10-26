@@ -84,7 +84,7 @@ public class MainCalculoBando {
                     getPreco(questionsData, larguraBase), //preço
                     "Cor: " + questionsData.getCorNome() + " - Largura: " + larguraBase + "cm - Altura: " + questionsData.getAlturaFixa() + "cm", //variante
                     "1", //peso
-                    String.valueOf(questionsData.getAlturaFixa()), //largura - 10 que será o tamanho maximo do pacote
+                    "100", //largura - 10 que será o tamanho maximo do pacote
                     String.valueOf(larguraBase), //comprimento - será a largura do produto
                     "100", //altura - 10 que será o tamanho maximo do pacote
                     " personalizacao-largura, personalizacao-altura, personalizacao, range-altura-bando, range-largura-bando", //tags

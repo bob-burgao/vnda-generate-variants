@@ -84,7 +84,7 @@ public class MainCalculoGuiaLateral {
                     getPreco(questionsData, alturaBase), //preço
                     "Cor: " + questionsData.getCorNome() + " - Largura: " + questionsData.getLarguraFixa() + "cm - Altura: " + alturaBase + "cm", //variante
                     "1", //peso
-                    String.valueOf(questionsData.getLarguraFixa()), //largura - 10 que será o tamanho maximo do pacote
+                    "100", //largura - 10 que será o tamanho maximo do pacote
                     String.valueOf(alturaBase), //comprimento - será a largura do produto
                     "100", //altura - 10 que será o tamanho maximo do pacote
                     " personalizacao-largura, personalizacao-altura, personalizacao, range-altura-guia-lateral, range-largura-guia-lateral", //tags
