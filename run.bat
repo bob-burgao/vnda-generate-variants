@@ -1,0 +1,1 @@
+java -cp target\vnda-generate-product-variants-csv-1.0-SNAPSHOT-jar-with-dependencies.jar br.com.arcls.Main

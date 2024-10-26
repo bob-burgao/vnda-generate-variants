@@ -1,0 +1,14 @@
+Pré-requisitos:
+- Ter o Java Instalado
+
+OBS.: Se você realiza declaração de IRPF, é capaz de ter o Java já instalado.
+
+
+Executando:
+1- Ao acessar a pasta você deve clicar 2x no item 'run'
+2- Será aberto o terminal(Tela Preta) com as orientações a seguir
+3- Preencher de acordo com o solicitado, e pressionar enter quando escolher o valor
+4- Após preencher todos os dados, seu arquivo com os dados do produto estará disponibilizado na pasta 'arquivos'
+5- Para sair a qualquer momento, pressione a tecla CTRL + C.
+
+Qualquer dúvida estou a disposição.
