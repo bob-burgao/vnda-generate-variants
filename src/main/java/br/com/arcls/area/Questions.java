@@ -29,7 +29,11 @@ public class Questions {
 
         System.out.println();
 
-        this.tamanhos(questionsData);
+        this.tamanhosProduto(questionsData);
+
+        System.out.println();
+
+        this.tamanhosPacote(questionsData);
 
         return questionsData;
     }
@@ -49,11 +53,11 @@ public class Questions {
         System.out.print("Bandô: ");
         questionsData.setBando(scanner.nextBigDecimal());
 
-//        System.out.print("Outros: ");
-        questionsData.setOutros(BigDecimal.valueOf(15));
+        System.out.print("Outros: ");
+        questionsData.setOutros(scanner.nextBigDecimal());
 
-//        System.out.print("Custo Fixo: ");
-        questionsData.setCustosFixo(BigDecimal.valueOf(75));
+        System.out.print("Custo Fixo: ");
+        questionsData.setCustosFixo(scanner.nextBigDecimal());
 
         System.out.println("********************************************************************");
     }
@@ -88,14 +92,14 @@ public class Questions {
         System.out.print("SKU Pré-fixo: ");
         questionsData.setSkuPrefixo(scanner.nextLine());
 
-        System.out.print("Quantidade de itens no estoque: ");
+        // System.out.print("Quantidade de itens no estoque: ");
         questionsData.setQuantidade(9999999);
 
         System.out.println("********************************************************************");
     }
 
-    private void tamanhos(final QuestionsData questionsData) {
-        System.out.println("*********************** Tamanos em CM ***********************");
+    private void tamanhosProduto(final QuestionsData questionsData) {
+        System.out.println("******************** Tamanhos do Produto em CM *********************");
 
         System.out.print("Área Mínima: ");
         questionsData.setAreaMin(scanner.nextInt());
@@ -105,6 +109,18 @@ public class Questions {
 
         System.out.print("Intervalo: ");
         questionsData.setIntervalo(scanner.nextInt());
+
+        System.out.println("********************************************************************");
+    }
+
+    private void tamanhosPacote(final QuestionsData questionsData) {
+        System.out.println("********************* Tamanhos do Pacote em CM *********************");
+
+        System.out.print("Altura do Pacote: ");
+        questionsData.setAlturaPacote(scanner.nextInt());
+
+        System.out.print("Largura do Pacote: ");
+        questionsData.setLarguraPacote(scanner.nextInt());
 
         System.out.println("********************************************************************");
     }

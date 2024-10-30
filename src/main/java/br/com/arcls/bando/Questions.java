@@ -27,6 +27,10 @@ public class Questions {
 
         this.tamanhos(questionsData);
 
+        System.out.println();
+
+        this.tamanhosPacote(questionsData);
+
         return questionsData;
     }
 
@@ -60,7 +64,7 @@ public class Questions {
     }
 
     private void tamanhos(final QuestionsData questionsData) {
-        System.out.println("*********************** Tamanos em CM ***********************");
+        System.out.println("*********************** Tamanhos do Produto em CM ***********************");
 
         System.out.print("Largura Mínima: ");
         questionsData.setLarguraMin(scanner.nextInt());
@@ -73,6 +77,18 @@ public class Questions {
 
         System.out.print("Intervalo: ");
         questionsData.setIntervalo(scanner.nextInt());
+
+        System.out.println("********************************************************************");
+    }
+
+    private void tamanhosPacote(final QuestionsData questionsData) {
+        System.out.println("********************* Tamanhos do Pacote em CM *********************");
+
+        System.out.print("Altura do Pacote: ");
+        questionsData.setAlturaPacote(scanner.nextInt());
+
+        System.out.print("Largura do Pacote: ");
+        questionsData.setLarguraPacote(scanner.nextInt());
 
         System.out.println("********************************************************************");
     }

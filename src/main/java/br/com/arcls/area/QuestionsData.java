@@ -23,11 +23,14 @@ public class QuestionsData {
     private BigDecimal taxaSite;//FIXO
     private BigDecimal simples;//FIXO
 
-    //Tamanho em CM
+    //Tamanho do Produto em CM
     private Integer areaMin;
     private Integer areaMax;
     private Integer intervalo;
 
+    //Tamanho do Pacote em CM
+    private Integer alturaPacote;
+    private Integer larguraPacote;
 
     //Descrição do produto
     private String nome;

@@ -84,14 +84,14 @@ public class MainCalculoBando {
                     getPreco(questionsData, larguraBase), //preço
                     "Cor: " + questionsData.getCorNome() + " - Largura: " + larguraBase + "cm - Altura: " + questionsData.getAlturaFixa() + "cm", //variante
                     "1", //peso
-                    "100", //largura - 10 que será o tamanho maximo do pacote
+                    String.valueOf(questionsData.getLarguraPacote()), //largura - 10 que será o tamanho maximo do pacote
                     String.valueOf(larguraBase), //comprimento - será a largura do produto
-                    "100", //altura - 10 que será o tamanho maximo do pacote
+                    String.valueOf(questionsData.getAlturaPacote()), //altura - 10 que será o tamanho maximo do pacote
                     " personalizacao-largura, personalizacao-altura, personalizacao, range-altura-bando, range-largura-bando", //tags
                     ""  //código de barras
             });
 
-            if (linhas.size() == 800) {
+            if (linhas.size() == 1500) {
                 ArrayList<String[]> pagina = new ArrayList<>(linhas);
                 paginas.add(pagina);
                 linhas.clear();

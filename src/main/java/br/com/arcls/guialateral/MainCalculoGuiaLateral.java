@@ -84,14 +84,14 @@ public class MainCalculoGuiaLateral {
                     getPreco(questionsData, alturaBase), //preço
                     "Cor: " + questionsData.getCorNome() + " - Largura: " + questionsData.getLarguraFixa() + "cm - Altura: " + alturaBase + "cm", //variante
                     "1", //peso
-                    "100", //largura - 10 que será o tamanho maximo do pacote
+                    String.valueOf(questionsData.getLarguraPacote()), //largura - 10 que será o tamanho maximo do pacote
                     String.valueOf(alturaBase), //comprimento - será a largura do produto
-                    "100", //altura - 10 que será o tamanho maximo do pacote
+                    String.valueOf(questionsData.getAlturaPacote()), //altura - 10 que será o tamanho maximo do pacote
                     " personalizacao-largura, personalizacao-altura, personalizacao, range-altura-guia-lateral, range-largura-guia-lateral", //tags
                     ""  //código de barras
             });
 
-            if (linhas.size() == 800) {
+            if (linhas.size() == 1000) {
                 ArrayList<String[]> pagina = new ArrayList<>(linhas);
                 paginas.add(pagina);
                 linhas.clear();

@@ -30,6 +30,9 @@ public class QuestionsData {
 
 
 
+    //Tamanho do Pacote em CM
+    private Integer alturaPacote;
+    private Integer larguraPacote;
 
 
 }
