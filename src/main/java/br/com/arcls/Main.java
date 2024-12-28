@@ -2,6 +2,7 @@ package br.com.arcls;
 
 import br.com.arcls.area.MainCalculoArea;
 import br.com.arcls.bando.MainCalculoBando;
+import br.com.arcls.guiainferior.MainCalculoGuiaInferior;
 import br.com.arcls.guialateral.MainCalculoGuiaLateral;
 
 import java.io.IOException;
@@ -21,11 +22,13 @@ public class Main {
         final String opcaoProduto = "0";
         final String opcaoBando = "1";
         final String opcaoGuiaLateral = "2";
+        final String opcaoGuiaInferior = "3";
 
         System.out.println("Selecione uma dessas opções: ");
         System.out.println(opcaoProduto + " - Criar Persiana (Cortina, Persiana, Kitbox, ETC.)");
         System.out.println(opcaoBando + " - Criar Bandô");
         System.out.println(opcaoGuiaLateral + " - Criar Guia Lateral");
+        System.out.println(opcaoGuiaInferior + " - Criar Guia Inferior ou base chata");
 
         final String escolhaAcao = scanner.nextLine();
 
@@ -43,6 +46,11 @@ public class Main {
                 }
                 case opcaoGuiaLateral: {
                     MainCalculoGuiaLateral.exec();
+                    novaCriacao();
+                    break;
+                }
+                case opcaoGuiaInferior: {
+                    MainCalculoGuiaInferior.exec();
                     novaCriacao();
                     break;
                 }
