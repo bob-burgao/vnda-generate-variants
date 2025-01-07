@@ -87,7 +87,7 @@ public class MainCalculoGuiaInferior {
                     String.valueOf(questionsData.getLarguraPacote()), //largura - 10 que será o tamanho maximo do pacote
                     String.valueOf(larguraBase), //comprimento - será a largura do produto
                     String.valueOf(questionsData.getAlturaPacote()), //altura - 10 que será o tamanho maximo do pacote
-                    " personalizacao-largura, personalizacao-altura, personalizacao, range-altura-guia-lateral, range-largura-guia-lateral", //tags
+                    " personalizacao-largura, personalizacao-altura, personalizacao, range-altura-base-chata, range-largura-base-chata", //tags
                     ""  //código de barras
             });
 
